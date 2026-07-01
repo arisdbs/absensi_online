@@ -101,32 +101,39 @@
         .btn-submit {
             width: 100%;
             padding: 14px;
-            background-color: #004b8f; /* Dibuat sedikit berbeda dari warna dasar agar tombol tetap terlihat menonjol */
+            background-color: #0076de; /* Warna biru yang lebih cerah agar menonjol */
             color: #ffffff;
             border: none;
-            border-radius: 10px;
+            border-radius: 12px;
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
-            box-shadow: none; /* <--- MENGHILANGKAN BAYANGAN UTAMA TOMBOL */
-            transition: all 0.2s ease;
+            position: relative;
+            transition: all 0.1s ease;
             margin-top: 10px;
+            
+            /* EFEK 3D: Membuat efek tebal di bawah tombol */
+            box-shadow: 0 6px 0 #004685, 0 12px 20px rgba(0, 0, 0, 0.3);
         }
         .btn-submit:hover {
-            box-shadow: none; /* <--- MENGHILANGKAN BAYANGAN SAAT KURSOR DI ATAS TOMBOL */
-            background-color: #003d75; /* Membuat tombol sedikit lebih gelap saat diarahkan kursor sebagai efek interaksi */
-            transform: scale(0.99);
+            background-color: #1c88ea;
+            /* Mempertahankan ketebalan saat kursor di atas tombol */
+            box-shadow: 0 6px 0 #004685, 0 14px 25px rgba(0, 0, 0, 0.35);
         }
+
         .btn-submit:active {
-            box-shadow: none; /* <--- MENGHILANGKAN BAYANGAN SAAT TOMBOL DIKLIK */
-            background-color: #003362;
+            /* EFEK DITEKAN: Tombol turun ke bawah sejauh 4px */
+            transform: translateY(4px);
+            /* Ketebalan bawah menipis menjadi 2px memberi impresi benar-benar amblas */
+            box-shadow: 0 2px 0 #004685, 0 4px 10px rgba(0, 0, 0, 0.3);
         }
+
         .btn-submit:disabled {
-            box-shadow: none;
-            background-color: #d1d8e0;
-            color: #a4b0be;
+            background-color: #5c8bba;
+            color: #d0e1f9;
+            box-shadow: 0 4px 0 #3a5c80;
             cursor: not-allowed;
-            transform: none;
+            transform: translateY(2px);
         }
     </style>
 </head>
