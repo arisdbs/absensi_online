@@ -98,12 +98,28 @@
             transition: all 0.2s ease;
             margin-top: 10px;
         }
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background-color: #004b8f; /* Dibuat sedikit berbeda dari warna dasar agar tombol tetap terlihat menonjol */
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: none; /* <--- MENGHILANGKAN BAYANGAN UTAMA TOMBOL */
+            transition: all 0.2s ease;
+            margin-top: 10px;
+        }
         .btn-submit:hover {
-            box-shadow: 2px 2px 5px #c5d0db, -2px -2px 5px #ffffff;
+            box-shadow: none; /* <--- MENGHILANGKAN BAYANGAN SAAT KURSOR DI ATAS TOMBOL */
+            background-color: #003d75; /* Membuat tombol sedikit lebih gelap saat diarahkan kursor sebagai efek interaksi */
             transform: scale(0.99);
         }
         .btn-submit:active {
-            box-shadow: inset 4px 4px 8px #c5d0db, inset -4px -4px 8px #ffffff;
+            box-shadow: none; /* <--- MENGHILANGKAN BAYANGAN SAAT TOMBOL DIKLIK */
+            background-color: #003362;
         }
         .btn-submit:disabled {
             box-shadow: none;
