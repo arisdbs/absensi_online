@@ -12,7 +12,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #e0e5ec;
+            background-color: #0056a3; /* Mengubah background dasar menjadi Biru Nusantara */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,10 +20,11 @@
             padding: 20px;
         }
         .container {
-            background-color: #e0e5ec;
+            background-color: #0056a3; /* Mengubah background form menjadi Biru Nusantara */
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+            /* Menyesuaikan bayangan agar efek Neumorphism tetap kontras di atas warna biru */
+            box-shadow: 20px 20px 60px #00427d, -20px -20px 60px #006ae9;
             width: 100%;
             max-width: 450px;
             transform-style: preserve-3d;
@@ -34,15 +35,15 @@
         }
         h2 {
             text-align: center;
-            color: #333333;
+            color: #ffffff; /* Mengubah text judul jadi putih */
             margin-bottom: 8px;
             font-weight: bold;
             text-transform: uppercase;
-            text-shadow: 1px 1px 2px #ffffff, -1px -1px 2px #c5d0db;
+            text-shadow: 1px 1px 2px #003366;
         }
         p.subtitle {
             text-align: center;
-            color: #777777;
+            color: #d0e1f9; /* Mengubah teks subtitle jadi biru muda terang */
             font-size: 14px;
             margin-bottom: 10px;
         }
@@ -73,16 +74,14 @@
             border: none;
             border-radius: 10px;
             font-size: 15px;
-            background-color: #e0e5ec;
-            box-shadow: inset 6px 6px 12px #c5d0db, inset -6px -6px 12px #ffffff;
+            background-color: #0056a3;
+            color: #ffffff; /* Mengubah teks ketikan user jadi putih */
+            box-shadow: inset 6px 6px 12px #00427d, inset -6px -6px 12px #006ae9;
             transition: all 0.3s ease;
         }
-        input[type="text"]:focus, select:focus {
-            outline: none;
-            box-shadow: inset 2px 2px 5px #c5d0db, inset -2px -2px 5px #ffffff;
-        }
-        #nama, #unit {
-            background-color: #f0f4f8; 
+        /* Agar tulisan placeholder (contoh: Nama akan muncul otomatis) berwarna agak terang */
+        input::placeholder {
+            color: #a3c7ee;
         }
         .btn-submit {
             width: 100%;
